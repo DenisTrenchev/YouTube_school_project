@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Playlist Updates</title>
+  </head>
+  <body>
+    <div id="nav">
+			<div id="nav_wrapper">
+				<ul>
+					<li><a href="http://swagmasteryoutubemasterrace42069.zettahost.bg/index.html">HOME</a>
+					</li>
+					<li> <a href="#">YouTube stuff</a>
+						<ul>
+              <li><a href="http://swagmasteryoutubemasterrace42069.zettahost.bg/search.html">Search</a>
+							</li>
+							<li><a href="http://swagmasteryoutubemasterrace42069.zettahost.bg/upload_video.html">Upload a video</a>
+							</li>
+							<li><a href="http://swagmasteryoutubemasterrace42069.zettahost.bg/my_uploads.html">Your uploads</a>
+							</li>
+							<li><a href="http://swagmasteryoutubemasterrace42069.zettahost.bg/playlist_updates.html">Create a playlist</a>
+							</li>
+						</ul>
+					</li>
+					<li> <a href="http://swagmasteryoutubemasterrace42069.zettahost.bg/contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <div id="container">
+    <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+    <div id="buttons">
+      <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
+      <br>
+      <label>Current Playlist Id: <input id="playlist-id" value='' type="text"/></label>
+      <br>
+      <label>Video Id: <input id="video-id" value='GZG9G5txtaE' type="text"/></label><button onclick="addVideoToPlaylist()">Add to current playlist</button>
+    </div>
+    <h3>Playlist: <span id="playlist-title"></span></h3>
+    <p id="playlist-description"></p>
+    <div id="playlist-container">
+      <span id="status">No Videos</span>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/playlist_updates.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    </div>
+  </body>
+</html>
